@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1046199340072",
+    "firebase_url": "https://xamarinuymobilecenter.firebaseio.com",
+    "project_id": "xamarinuymobilecenter",
+    "storage_bucket": "xamarinuymobilecenter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046199340072:android:e7aac846e35b6f83",
+        "android_client_info": {
+          "package_name": "com.arkano.xamarinuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046199340072-eqcdqeadrm0i446dds8khjglqg1ansd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVn3AKcajXmoylTY5xawnqdzLJ24krRkw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

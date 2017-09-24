@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace XamarinUYMobileCenter.Views
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainPage : TabbedPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.Children.Add(new HomePage());
+            this.Children.Add(new SurveyPage());
+            this.Children.Add(new FormPage());
+            this.Children.Add(new CrashPage());
+        }
+    }
+}

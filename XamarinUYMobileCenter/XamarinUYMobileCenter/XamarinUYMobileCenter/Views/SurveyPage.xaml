@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinUYMobileCenter.Views.SurveyPage"
+             Title="Survey"
+             Icon="survey.png">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>10, 30, 10, 10</OnPlatform.iOS>
+            <OnPlatform.Android>10, 10, 10, 10</OnPlatform.Android>
+            <OnPlatform.WinPhone>10, 10, 10, 10</OnPlatform.WinPhone>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="10">
+            <Label Text="What would you like to see in the next azure day?" HorizontalOptions="Center" FontSize="Large" />
+            <ListView  x:Name="listView" ItemsSource="{Binding ListItems}" SelectedItem="{Binding SelectedListItem, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <SwitchCell Text="{Binding Text}" On="{Binding Selected}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Send" HorizontalOptions="FillAndExpand" Command="{Binding SendCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
