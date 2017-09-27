@@ -24,10 +24,7 @@ namespace XamarinUYMobileCenter
         public App()
         {
             InitializeComponent();
-
-            // Start Mobile Center Services
-            MobileCenter.Start("android=e0aa0f26-027d-4223-9276-a721f93b1efa;ios=ccced66e-90cb-4219-a01b-fd5d24b1761a", typeof(Analytics), typeof(Crashes));
-
+            
             this.AppVersion = string.Format("v{0}", CrossVersionTracking.Current.CurrentVersion);
 
             MainPage = new MainPage();
@@ -36,6 +33,9 @@ namespace XamarinUYMobileCenter
         protected override void OnStart()
         {
             // Handle when your app starts
+
+            // Start Mobile Center Services
+            MobileCenter.Start("android=e0aa0f26-027d-4223-9276-a721f93b1efa;ios=ccced66e-90cb-4219-a01b-fd5d24b1761a", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
