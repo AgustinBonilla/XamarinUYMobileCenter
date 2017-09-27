@@ -35,7 +35,7 @@ namespace XamarinUYMobileCenter
             // Handle when your app starts
 
             // Start Mobile Center Services
-            MobileCenter.Start("android=ed7fe19c-a387-48b8-b4d1-21aeb6fe15d0;ios=ccced66e-90cb-4219-a01b-fd5d24b1761a", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("android=e0aa0f26-027d-4223-9276-a721f93b1efa;ios=ccced66e-90cb-4219-a01b-fd5d24b1761a", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
