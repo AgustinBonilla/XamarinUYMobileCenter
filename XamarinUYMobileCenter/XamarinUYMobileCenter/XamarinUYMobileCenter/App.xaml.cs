@@ -26,16 +26,11 @@ namespace XamarinUYMobileCenter
             InitializeComponent();
 
             // Start Mobile Center Services
-            //MobileCenter.Start("android=09863d5c-9cd4-4885-92bc-6f961430a77d;ios=6e302a72-b00f-48e4-9467-082ef931c193", typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push));
-            MobileCenter.Start("android=8ae13ecf-743f-4f99-9b01-5e0ebb901081;ios=c9bf414d-84a8-4bda-8c1e-d7e23175de76", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("android=ed7fe19c-a387-48b8-b4d1-21aeb6fe15d0;ios=af9c5f8b-28fd-48ae-a523-566417f1a81b", typeof(Analytics), typeof(Crashes));
 
             this.AppVersion = string.Format("v{0}", CrossVersionTracking.Current.CurrentVersion);
 
             MainPage = new MainPage();
-
-            //TODO: App launch error
-            //int value = 2;
-            //value = value / 0;
         }
         
         protected override void OnStart()
